@@ -19,7 +19,7 @@ const createResizeEvent = (ctx) => wait(() => {
  */
 const setupContainer = (ctx) => {
   // this.options = opts;
-  ctx.container = $e(ctx.options.container);
+  ctx.container = $e(ctx.options.container, ctx.options.piotDocument);
 
   // Checks if container element exists
   if (ctx.container instanceof $e || !ctx.container) {
